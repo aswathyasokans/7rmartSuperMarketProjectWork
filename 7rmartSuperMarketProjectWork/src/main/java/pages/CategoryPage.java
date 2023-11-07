@@ -82,8 +82,8 @@ public class CategoryPage {
 	}
 	public boolean isAlertMessageDisplay()
 	{
-		WaitUtility waitutility=new WaitUtility();
-		waitutility.waitForVisibilityElement(driver, alertSucessfulBox);
+		//WaitUtility waitutility=new WaitUtility();
+		//waitutility.waitForVisibilityElement(driver, alertSucessfulBox);
 		return alertSucessfulBox.isDisplayed();
 
 	}

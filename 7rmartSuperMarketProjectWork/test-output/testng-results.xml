@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-07T06:16:22 IST" name="Suite" finished-at="2023-11-07T06:17:08 IST" duration-ms="46089">
+    <groups>
+      <group name="regression">
+        <method signature="CategoryTest.verifyAdminSearchAValidCategoryItem()[pri:0, instance:testscripts.CategoryTest@1a6c1270]" name="verifyAdminSearchAValidCategoryItem" class="testscripts.CategoryTest"/>
+        <method signature="LoginTest.verifyAnUserAbleToLoginWithValidCredentials()[pri:0, instance:testscripts.LoginTest@1fde5d22]" name="verifyAnUserAbleToLoginWithValidCredentials" class="testscripts.LoginTest"/>
+        <method signature="ManageOfferCodeTest.verifySearchListOfferCodes()[pri:0, instance:testscripts.ManageOfferCodeTest@6dee4f1b]" name="verifySearchListOfferCodes" class="testscripts.ManageOfferCodeTest"/>
+        <method signature="ManageOrderTest.verifyResetListOrders()[pri:0, instance:testscripts.ManageOrderTest@4b14918a]" name="verifyResetListOrders" class="testscripts.ManageOrderTest"/>
+        <method signature="ManagePagesTest.verifyAnAdminUserWantToTheSerachAnInValidIitemInTheListPages()[pri:0, instance:testscripts.ManagePagesTest@421bba99]" name="verifyAnAdminUserWantToTheSerachAnInValidIitemInTheListPages" class="testscripts.ManagePagesTest"/>
+        <method signature="ManagePagesTest.verifyAnAdminUserWantToTheSerachAnValidIitemInTheListPages()[pri:0, instance:testscripts.ManagePagesTest@421bba99]" name="verifyAnAdminUserWantToTheSerachAnValidIitemInTheListPages" class="testscripts.ManagePagesTest"/>
+        <method signature="ManageSliderTest.verifyEditInTheListSlider()[pri:0, instance:testscripts.ManageSliderTest@176b3f44]" name="verifyEditInTheListSlider" class="testscripts.ManageSliderTest"/>
+      </group> <!-- regression -->
+    </groups>
+    <test started-at="2023-11-07T06:16:22 IST" name="Test" finished-at="2023-11-07T06:17:08 IST" duration-ms="46089">
+      <class name="testscripts.ManageOfferCodeTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscripts.ManageOfferCodeTest@6dee4f1b]" started-at="2023-11-07T06:16:49 IST" name="initializeBrowser" finished-at="2023-11-07T06:16:51 IST" duration-ms="2464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifySearchListOfferCodes()[pri:0, instance:testscripts.ManageOfferCodeTest@6dee4f1b]" started-at="2023-11-07T06:16:51 IST" name="verifySearchListOfferCodes" description="Verify to search a list offer codes" finished-at="2023-11-07T06:16:53 IST" duration-ms="1997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchListOfferCodes -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscripts.ManageOfferCodeTest@6dee4f1b]" started-at="2023-11-07T06:16:53 IST" name="browserClose" finished-at="2023-11-07T06:16:54 IST" duration-ms="490" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchListOfferCodes status=SUCCESS method=ManageOfferCodeTest.verifySearchListOfferCodes()[pri:0, instance:testscripts.ManageOfferCodeTest@6dee4f1b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testscripts.ManageOfferCodeTest -->
+      <class name="testscripts.ManageOrderTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscripts.ManageOrderTest@4b14918a]" started-at="2023-11-07T06:16:36 IST" name="initializeBrowser" finished-at="2023-11-07T06:16:39 IST" duration-ms="2946" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyResetListOrders()[pri:0, instance:testscripts.ManageOrderTest@4b14918a]" started-at="2023-11-07T06:16:39 IST" name="verifyResetListOrders" description="Verify to reset a list orders" finished-at="2023-11-07T06:16:44 IST" duration-ms="4890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResetListOrders -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscripts.ManageOrderTest@4b14918a]" started-at="2023-11-07T06:16:44 IST" name="browserClose" finished-at="2023-11-07T06:16:44 IST" duration-ms="514" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyResetListOrders status=SUCCESS method=ManageOrderTest.verifyResetListOrders()[pri:0, instance:testscripts.ManageOrderTest@4b14918a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testscripts.ManageOrderTest -->
+      <class name="testscripts.CategoryTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscripts.CategoryTest@1a6c1270]" started-at="2023-11-07T06:16:44 IST" name="initializeBrowser" finished-at="2023-11-07T06:16:46 IST" duration-ms="1990" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyAdminSearchAValidCategoryItem()[pri:0, instance:testscripts.CategoryTest@1a6c1270]" started-at="2023-11-07T06:16:46 IST" name="verifyAdminSearchAValidCategoryItem" description="Verify an admin search a valid item" finished-at="2023-11-07T06:16:48 IST" duration-ms="1969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminSearchAValidCategoryItem -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscripts.CategoryTest@1a6c1270]" started-at="2023-11-07T06:16:48 IST" name="browserClose" finished-at="2023-11-07T06:16:49 IST" duration-ms="499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAdminSearchAValidCategoryItem status=SUCCESS method=CategoryTest.verifyAdminSearchAValidCategoryItem()[pri:0, instance:testscripts.CategoryTest@1a6c1270] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testscripts.CategoryTest -->
+      <class name="testscripts.LoginTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscripts.LoginTest@1fde5d22]" started-at="2023-11-07T06:16:22 IST" name="initializeBrowser" finished-at="2023-11-07T06:16:32 IST" duration-ms="9442" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyAnUserAbleToLoginWithValidCredentials()[pri:0, instance:testscripts.LoginTest@1fde5d22]" started-at="2023-11-07T06:16:32 IST" name="verifyAnUserAbleToLoginWithValidCredentials" description="Verify whether user is able to login using valid username and password" finished-at="2023-11-07T06:16:35 IST" duration-ms="3261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAnUserAbleToLoginWithValidCredentials -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscripts.LoginTest@1fde5d22]" started-at="2023-11-07T06:16:35 IST" name="browserClose" finished-at="2023-11-07T06:16:36 IST" duration-ms="642" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAnUserAbleToLoginWithValidCredentials status=SUCCESS method=LoginTest.verifyAnUserAbleToLoginWithValidCredentials()[pri:0, instance:testscripts.LoginTest@1fde5d22] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testscripts.LoginTest -->
+      <class name="testscripts.ManageSliderTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscripts.ManageSliderTest@176b3f44]" started-at="2023-11-07T06:16:54 IST" name="initializeBrowser" finished-at="2023-11-07T06:16:56 IST" duration-ms="2107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyEditInTheListSlider()[pri:0, instance:testscripts.ManageSliderTest@176b3f44]" started-at="2023-11-07T06:16:56 IST" name="verifyEditInTheListSlider" description="Verify to edit the list slider" finished-at="2023-11-07T06:16:58 IST" duration-ms="2262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditInTheListSlider -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscripts.ManageSliderTest@176b3f44]" started-at="2023-11-07T06:16:58 IST" name="browserClose" finished-at="2023-11-07T06:16:58 IST" duration-ms="502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEditInTheListSlider status=SUCCESS method=ManageSliderTest.verifyEditInTheListSlider()[pri:0, instance:testscripts.ManageSliderTest@176b3f44] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testscripts.ManageSliderTest -->
+      <class name="testscripts.ManagePagesTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscripts.ManagePagesTest@421bba99]" started-at="2023-11-07T06:16:58 IST" name="initializeBrowser" finished-at="2023-11-07T06:17:02 IST" duration-ms="3263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyAnAdminUserWantToTheSerachAnValidIitemInTheListPages()[pri:0, instance:testscripts.ManagePagesTest@421bba99]" started-at="2023-11-07T06:17:02 IST" name="verifyAnAdminUserWantToTheSerachAnValidIitemInTheListPages" description="Verify an admin search valid items" finished-at="2023-11-07T06:17:04 IST" duration-ms="2267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAnAdminUserWantToTheSerachAnValidIitemInTheListPages -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscripts.ManagePagesTest@421bba99]" started-at="2023-11-07T06:17:04 IST" name="browserClose" finished-at="2023-11-07T06:17:04 IST" duration-ms="500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAnAdminUserWantToTheSerachAnValidIitemInTheListPages status=SUCCESS method=ManagePagesTest.verifyAnAdminUserWantToTheSerachAnValidIitemInTheListPages()[pri:0, instance:testscripts.ManagePagesTest@421bba99] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscripts.ManagePagesTest@421bba99]" started-at="2023-11-07T06:17:04 IST" name="initializeBrowser" finished-at="2023-11-07T06:17:06 IST" duration-ms="1810" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyAnAdminUserWantToTheSerachAnInValidIitemInTheListPages()[pri:0, instance:testscripts.ManagePagesTest@421bba99]" started-at="2023-11-07T06:17:06 IST" name="verifyAnAdminUserWantToTheSerachAnInValidIitemInTheListPages" description="Verify to search an  invalid items" finished-at="2023-11-07T06:17:08 IST" duration-ms="1641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAnAdminUserWantToTheSerachAnInValidIitemInTheListPages -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscripts.ManagePagesTest@421bba99]" started-at="2023-11-07T06:17:08 IST" name="browserClose" finished-at="2023-11-07T06:17:08 IST" duration-ms="477" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAnAdminUserWantToTheSerachAnInValidIitemInTheListPages status=SUCCESS method=ManagePagesTest.verifyAnAdminUserWantToTheSerachAnInValidIitemInTheListPages()[pri:0, instance:testscripts.ManagePagesTest@421bba99] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testscripts.ManagePagesTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

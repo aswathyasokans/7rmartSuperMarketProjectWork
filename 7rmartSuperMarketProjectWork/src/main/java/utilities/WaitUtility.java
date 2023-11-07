@@ -2,7 +2,6 @@ package utilities;
 
 import java.time.Duration;
 import java.util.NoSuchElementException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -34,59 +33,17 @@ public class WaitUtility {
 	{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
 		wait.until(ExpectedConditions.alertIsPresent());
+		
 
 	}
-	/*public void waitForMoreInfoIcon(WebDriver driver, WebElement target)
-	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
-		wait.until(ExpectedConditions.elementToBeClickable(target));
-	}*/
-	/*public void waitForClickNewButton(WebDriver driver, WebElement target)
-	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
-		wait.until(ExpectedConditions.elementToBeClickable(target));
-	}*/
-	/*public void waitForEditIconClick(WebDriver driver, WebElement target)
-	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
-		wait.until(ExpectedConditions.elementToBeClickable(target));
-	}*/
-	/*public void waitForElementToBeClickable(WebDriver driver, WebElement target)
-	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
-		wait.until(ExpectedConditions.elementToBeClickable(target));
-	}*/
-	/*public void waitForElementToClickable(WebDriver driver, WebElement target)
-	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IMPLICIT_WAIT));
-		wait.until(ExpectedConditions.elementToBeClickable(target));
-	}*/
-	/*public void waitForNewButtonClick(WebDriver driver, WebElement target)
-	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IMPLICIT_WAIT));
-		wait.until(ExpectedConditions.elementToBeClickable(target));
-	}*/
-	/*public void waitForIconMoreInfo(WebDriver driver, WebElement target)
-	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IMPLICIT_WAIT));
-		wait.until(ExpectedConditions.elementToBeClickable(target));
-	}*/
+	
 	public void waitForPresentIsAlert(WebDriver driver)
 	{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IMPLICIT_WAIT));
 		wait.until(ExpectedConditions.alertIsPresent());
 
 	}
-	/*public void waitForClickableSaveButton(WebDriver driver, WebElement target)
-	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IMPLICIT_WAIT));
-		wait.until(ExpectedConditions.elementToBeClickable(target));
-	}*/
-	/*public void waitForEnableButton(WebDriver driver,WebElement target)
-	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
-		wait.until(ExpectedConditions.elementToBeClickable(target));
-	}*/
+	
 	public void waitForElementFluentWait(WebDriver driver,WebElement element)
 	{
 		Wait<WebDriver> fluentWait=new FluentWait<WebDriver>(driver)

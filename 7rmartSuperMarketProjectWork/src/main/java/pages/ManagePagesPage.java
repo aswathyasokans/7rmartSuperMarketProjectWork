@@ -75,10 +75,7 @@ public class ManagePagesPage {
 		return titleList;
 
 	}
-	/*public List<WebElement> getTableRowCount()
-	{
-		return tableRow;
-	}*/
+	
 	public boolean resultNotFoundIsDisplayed()
 	{
 		return resultNotFound.isDisplayed();

@@ -23,6 +23,7 @@ public class ManageLocationPage {
 	private @FindBy(xpath="//button[@type='submit']") WebElement saveButton;
 	private @FindBy(xpath="//div[contains(@class,'alert-success')]") WebElement locationCreatedAlert;
 	
+	
 	public ManageLocationPage clickOnTheManageLocationfoIcon()
 	{
 		PageUtility pageutility=new PageUtility();
@@ -72,6 +73,7 @@ public class ManageLocationPage {
 		
 		return locationCreatedAlert.isDisplayed();
 	}
+	
 }
 
 

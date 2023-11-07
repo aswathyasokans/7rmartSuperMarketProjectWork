@@ -24,7 +24,7 @@ public class ManageSliderPage {
 	private @FindBy(xpath="//input[@type='text']") WebElement linkTextFiled;
 	private @FindBy(xpath="//button[@type='submit']") WebElement saveButton;
 	private @FindBy(xpath="//div[contains(@class,'alert-success')]") WebElement alertSucessgulMessage;
-	private @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/slider/edit?edit=854&page_ad=1']") WebElement editIconButon;
+	private @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/slider/edit?edit=874&page_ad=1']") WebElement editIconButon;
 	private @FindBy(xpath="//input[@value='http:electroniccircuit']") WebElement reLinkTextField;
 	private @FindBy(xpath="//button[@name='update']") WebElement updateButton;
 	private @FindBy(xpath="//div[contains(@class,' alert-success')]//child::button") WebElement sliderChangeAlert;

@@ -66,17 +66,18 @@ public class AdminUsersPage {
 	{
 		
 		PageUtility pageutility=new PageUtility();
-		pageutility.selectOptionFromDropDown(userTypeDropDownFiled, driver);
-		 pageutility.selectOptionByVisibleText(userTypeDropDownFiled, userType);
+		pageutility.selectOptionFromDropDown(userTypeDropDown, driver);
+		pageutility.selectOptionValue(userTypeDropDown, userType);
 
 		return this;
 	}
 
 	public AdminUsersPage clickOnSaveButton()
 	{
+		WaitUtility waitutility=new WaitUtility();
+		waitutility.waitForElementToBeClickable(driver, saveButton);
 		PageUtility pageutility=new PageUtility();
 		pageutility.javaScriptExecutorForClick(driver, saveButton);
-
 		return this;
 	}
 	public boolean isAlertMessageDisplay()
@@ -87,12 +88,6 @@ public class AdminUsersPage {
 	}
 	public AdminUsersPage clickOnSearchButton()
 	{
-		/*WaitUtility waitutility=new WaitUtility();
-		waitutility.waitForClickNewButton(driver, searchButton);
-
-		JavascriptExecutor executor = (JavascriptExecutor) driver;
-	    executor.executeScript("arguments[0].click();", searchButton);
-		*/
 		searchButton.click();
 		return this;
 	}
@@ -104,7 +99,16 @@ public class AdminUsersPage {
 		userNameTextFiled.sendKeys(userName);
 		return this;
 	}
+	public AdminUsersPage clickOnUserTypeSearch(String userTypeSearch)
+	{
+		
+		PageUtility pageutility=new PageUtility();
+		pageutility.selectOptionFromDropDown(userTypeDropDownFiled, driver);
+		pageutility.selectOptionValue(userTypeDropDownFiled, userTypeSearch);
 
+		return this;
+	}
+	
 	public List<WebElement> getAdminUserTableElement()
 	{
 		return tableAdminUSer;

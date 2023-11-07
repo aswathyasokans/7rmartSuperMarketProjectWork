@@ -23,7 +23,8 @@ public class ManageOrdersPage {
 	private @FindBy(xpath="//select[@id='pt']") WebElement paymentModeDropDown;
 	private @FindBy(xpath="//select[@id='st']") WebElement statusDropDown;
 	private @FindBy(xpath="//button[@name='Search']") WebElement searchListButton;
-	private @FindBy(xpath="//table[contains(@class,'table-bordered')]//tr//td[text()='288']") WebElement tableElement;
+	private @FindBy(xpath="//table[contains(@class,'table-bordered')]//tr//td[text()='283']") WebElement tableElement;
+	private @FindBy(xpath="//button[text()='Reset']") WebElement resetButton;
 	
 	public ManageOrdersPage clickOnTheManageOrderInfoIcon()
 	{
@@ -34,6 +35,7 @@ public class ManageOrdersPage {
 	}
 	public ManageOrdersPage clickOnSearchButton()
 	{
+		
 		WaitUtility waitutility=new WaitUtility();
 		waitutility.waitForElementToBeClickable(driver, searchButton);
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
@@ -66,7 +68,11 @@ public class ManageOrdersPage {
 	}
 	public ManageOrdersPage clickOnSearchListButton()
 	{
-		searchListButton.click();
+		
+		WaitUtility waitutility=new WaitUtility();
+		waitutility.waitForElementToBeClickable(driver, searchListButton);
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+	    executor.executeScript("arguments[0].click();", searchListButton);
 		return this;
 		
 	}
@@ -74,5 +80,12 @@ public class ManageOrdersPage {
 	{
 		return tableElement.isDisplayed();
 		}
-
+	public ManageOrdersPage clickOnResetButton()
+	{
+		PageUtility pageutility=new PageUtility();
+		pageutility.javaScriptExecutorForClick(driver, resetButton);
+		
+		return this;
+		
+	}
 }

@@ -1,22 +1,19 @@
 package testscripts;
-
 import static org.testng.Assert.assertTrue;
-
 import org.testng.annotations.Test;
-
 import com.obsqura.rmartSuperMarketProjectWork.Base;
-
 import pages.CategoryPage;
 import pages.LoginPage;
+import retry.Retry;
 import utilities.ExcelUtility;
 
 public class CategoryTest extends Base {
-	@Test
+	@Test(groups = {"regression"},description="Verify an admin add a new items in category",retryAnalyzer=Retry.class)
 	public void verifyAdminAddANewCategoryItems()
 	{
-		String validUserName=ExcelUtility.getString(0, 1, "Login");
-		String validPassword=ExcelUtility.getString(1, 1, "Login");
-		String categoryItem=ExcelUtility.getString(0, 1, "Category");
+		String validUserName=ExcelUtility.getString(0, 1, "LoginPage");
+		String validPassword=ExcelUtility.getString(1, 1, "LoginPage");
+		String categoryItem=ExcelUtility.getString(0, 1, "CategoryPage");
 		LoginPage loginpage=new LoginPage(driver);
 		loginpage.enterUserNameOnUserNameFiled(validUserName).enterPasswordOnPasswordFiled(validPassword).clickOnTheSignButton();
 		CategoryPage categorypage=new CategoryPage(driver);
@@ -24,12 +21,12 @@ public class CategoryTest extends Base {
 		boolean sucessfulAlertMessageDisplay=categorypage.isAlertMessageDisplay();
 		assertTrue(sucessfulAlertMessageDisplay,"An admin user can't add"+categoryItem+"in the 'New' Button ");
 	}
-	@Test
+	@Test(groups = {"regression"},description="Verify an admin search a valid item",retryAnalyzer=Retry.class)
 	public void verifyAdminSearchAValidCategoryItem()
 	{
-		String validUserName=ExcelUtility.getString(0, 1, "Login");
-		String validPassword=ExcelUtility.getString(0, 1, "Login");
-		String categoryItem=ExcelUtility.getString(0, 1, "Category");
+		String validUserName=ExcelUtility.getString(0, 1, "LoginPage");
+		String validPassword=ExcelUtility.getString(0, 1, "LoginPage");
+		String categoryItem=ExcelUtility.getString(0, 1, "CategoryPage");
 		LoginPage loginpage=new LoginPage(driver);
 		loginpage.enterUserNameOnUserNameFiled(validUserName).enterPasswordOnPasswordFiled(validPassword).clickOnTheSignButton();
 		CategoryPage categorypage=new CategoryPage(driver);

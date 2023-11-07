@@ -89,7 +89,10 @@ public class ManageDeliveryBoyPage {
     }
     public ManageDeliveryBoyPage clickOnTheActiveButton()
     {
-    	activeButton.click();
+    	//JavascriptExecutor executor = (JavascriptExecutor) driver;
+	   // executor.executeScript("arguments[0].click();", activeButton);   
+    	PageUtility pageutility=new PageUtility();
+		pageutility.javaScriptExecutorForClick(driver, activeButton);
 		return this;
     }
     public boolean isStatusChangedAlertMessageDisplay()

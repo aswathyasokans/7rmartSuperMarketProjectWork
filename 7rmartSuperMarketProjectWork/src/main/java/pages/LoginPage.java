@@ -1,9 +1,13 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import utilities.PageUtility;
+import utilities.WaitUtility;
 
 public class LoginPage {
 	public WebDriver driver;
@@ -31,7 +35,10 @@ public class LoginPage {
 	}
 	public LoginPage clickOnTheSignButton()
 	{
-		signinButton.click();
+		WaitUtility waitutility=new WaitUtility();
+		waitutility.waitForElementToBeClickable(driver, signinButton);
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+	    executor.executeScript("arguments[0].click();", signinButton);
 		return this;
 	}
 	public boolean isHomePageDisplayed()

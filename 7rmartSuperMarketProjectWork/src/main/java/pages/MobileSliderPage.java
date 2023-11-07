@@ -24,6 +24,8 @@ public class MobileSliderPage {
 	private @FindBy(xpath="//input[@id='main_img']") WebElement chooseFileButton;
 	private @FindBy(xpath="//button[@type='submit']") WebElement saveButton;
 	private @FindBy(xpath="//div[contains(@class,'alert-success')]") WebElement alertMessage;
+	private @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Mobileslider/delete?del=673&page_ad=1']") WebElement deleteIcon;
+	private @FindBy(xpath="//div[contains(@class,'alert-success')]") WebElement deleteAlertMessage;
 	
 	public MobileSliderPage clickOnMobileSliderInfoIcon()
 	{
@@ -67,5 +69,21 @@ public class MobileSliderPage {
 	{
 		return alertMessage.isDisplayed();
 	}
-
+	public MobileSliderPage clickOnDeleteIcon()
+	{
+		/*WaitUtility waitutility=new WaitUtility();
+		waitutility.waitForElementToBeClickable(driver,deleteIcon);
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", deleteIcon);*/
+		PageUtility pageutility=new PageUtility();
+		pageutility.javaScriptExecutorForClick(driver, deleteIcon);
+		pageutility.acceptAlert(driver);
+		return this;
+	}
+	
+	public boolean   alertDeleteMessageISDisplay()
+	{
+		return deleteAlertMessage.isDisplayed();
+	}
+	
 }
